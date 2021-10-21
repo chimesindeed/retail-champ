@@ -3,7 +3,7 @@
 import React, {useState} from 'react'
 import * as Context from './contextObjects'
 
-export const HeadersContextContainer = (props) => {
+export const ProvideContextForHeaders = (props) => {
   const [storeNumber, setStoreNumber] = useState('Number');
   const [storeAddress, setStoreAddress] = useState('Address');
   const [storePhone, setStorePhone] = useState('Phone');

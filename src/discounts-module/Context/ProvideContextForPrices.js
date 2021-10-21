@@ -3,7 +3,7 @@
 import React, {useState} from 'react'
 import * as Context from './contextObjects'
 
-export const PricesContextContainer = (props) => {
+export const ProvideContextForPrices = (props) => {
   const [childrensPrice, setChildrensPrice] = useState('');
   const [softcoverPrice, setSoftcoverPrice] = useState('');
   const [hardcoverPrice, setHardcoverPrice] = useState('');
