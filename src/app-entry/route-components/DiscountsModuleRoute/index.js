@@ -28,6 +28,14 @@ export const DiscountsModuleRoute = () => {
         <div className="exchange-policy">
             <StoreExchangePolicy />
         </div>
+        <div className="discount-boxes-wrapper">
+        <div className="ticket-cycle-card">
+
+        </div>
+        <div className="itemized-discounts-card">
+            
+        </div>
+        </div>
     </div>
   )
 }
