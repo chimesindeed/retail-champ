@@ -1,9 +1,8 @@
 import React from 'react';
 import {Card} from 'reactstrap';
-import '../../../Styles.css'
 import {useDaysPassed} from '../../../Hooks/useDaysPassed'
 
-export const TicketCycleContainer = (props) => {
+export const TicketCycleCard = (props) => {
     const {color} = useDaysPassed();
     const setColorComponent = () => {
         switch(color){
@@ -18,8 +17,8 @@ export const TicketCycleContainer = (props) => {
     }
   return (
       <Card>
-        <div>
-        Clothing / Handbags
+        <div className="ticket-cycle-title">
+            Clothing / Handbags
         </div>
             
         {

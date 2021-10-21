@@ -6,6 +6,7 @@ import {StorePhone} from '../../../DiscountsModule/Display/a-topside-header-comp
 import {StoreHours} from '../../../DiscountsModule/Display/a-topside-header-components/StoreHours'
 import {DiscountsTitle} from '../../../DiscountsModule/Display/a-topside-header-components/DiscountsTitle'
 import { StoreExchangePolicy } from '../../../DiscountsModule/Display/b-rightside-header-components/StoreExchangePolicy'
+import { TicketCycleCard} from '../../../DiscountsModule/Display/discount-components/TicketCycleCard'
 
 export const DiscountsModuleRoute = () => {
   return (
@@ -30,7 +31,7 @@ export const DiscountsModuleRoute = () => {
         </div>
         <div className="discount-boxes-wrapper">
         <div className="ticket-cycle-card">
-
+            <TicketCycleCard />
         </div>
         <div className="itemized-discounts-card">
             
