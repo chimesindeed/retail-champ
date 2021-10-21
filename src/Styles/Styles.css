@@ -1,0 +1,68 @@
+.window-body {
+  background-color: cornsilk;
+}
+.wrapper {
+    height: 100vh; width: 100vw;
+    background-color: cornsilk;
+    display: grid;
+    grid-template: .4fr .1fr .1fr .1fr 1.2fr 1.2fr .7fr / 1fr 1fr 1fr 1fr .3fr 1.3fr;
+    grid-template-areas:
+    "storenumber storenumber storenumber storehours storehours storehours"
+    "storeaddress storeaddress . . . ."
+    "storephone storephone . . . ."
+    "discountstitle discountstitle discountstitle discountstitle . ."
+    "discountboxes discountboxes discountboxes discountboxes exchangepolicy exchangepolicy"
+    "discountboxes discountboxes discountboxes discountboxes delivery delivery"
+    "footer footer footer footer footer footer";
+}
+.store-num {
+    grid-area: storenumber;
+    background-color: cornsilk; 
+    color: rgb(5, 5, 73);
+    font-weight: 700;
+    font-size: 2.3em;
+    margin-left: 7px;
+}
+.store-add {
+    grid-area: storeaddress;
+    background-color: cornsilk; 
+    color: rgb(5, 5, 73);
+    font-size: 1em;
+    margin-left: 7px;
+}
+.store-phone{
+    grid-area: storephone;
+    background-color: cornsilk;
+    color: rgb(138, 38, 38);
+    font-size: 1em;
+    margin-left: 7px;
+}
+.store-hours{
+    grid-area: storehours;
+    display: flex;
+    flex-direction: column;
+    align-items: 'center';
+    background-color: cornsilk;
+    color: rgb(122, 218, 165);
+    font-size: 1.2em;
+}
+.exchange-policy{
+    grid-area: exchangepolicy;
+    background-color: cornsilk;
+    color: red;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+}
+.discounts-title{
+    grid-area: discountstitle;
+    background-color: cornsilk;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+}
