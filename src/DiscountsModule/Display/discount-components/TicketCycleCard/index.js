@@ -18,7 +18,7 @@ export const TicketCycleCard = (props) => {
         }
     }
     return (
-        <Card>
+        <Card className="ticket-cycle-card">
             <div className="ticket-cycle-title">
                 Clothing / Handbags
             </div>
