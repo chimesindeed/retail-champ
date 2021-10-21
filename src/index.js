@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/Styles.css';
 import {App} from './app-entry/App';
-import {ProvideContextForHeaders} from './discounts-module/Context/ProvideContextForHeaders'
-import {ProvideContextForPrices} from './discounts-module/Context/ProvideContextForPrices'
+import {ProvideContextForHeaders} from './DiscountsModule/Context/ProvideContextForHeaders'
+import {ProvideContextForPrices} from './DiscountsModule/Context/ProvideContextForPrices'
 
 ReactDOM.render(
     <ProvideContextForHeaders>
@@ -13,7 +13,6 @@ ReactDOM.render(
         <App />
 
     </ProvideContextForPrices>
-    </ProvideContextForHeaders>
-    ,
+    </ProvideContextForHeaders>,
   document.getElementById('root')
 );
