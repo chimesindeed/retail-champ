@@ -4,14 +4,14 @@ import React, {useState} from 'react'
 import * as Context from './contextObjects'
 
 export const ProvideContextForHeaders = (props) => {
-  const [storeNumber, setStoreNumber] = useState('Number');
+  const [storeId, setStoreId] = useState('Id');
   const [storeAddress, setStoreAddress] = useState('Address');
   const [storePhone, setStorePhone] = useState('Phone');
   const [storeHours, setStoreHours] = useState('Hours');
   const [storeExchangePolicy, setStoreExchangePolicy] = useState('Exchange Policy')
 
     return (
-      <Context.StoreNumberContext.Provider value={[storeNumber, setStoreNumber]}>
+      <Context.StoreIdContext.Provider value={[storeId, setStoreId]}>
       <Context.StoreAddressContext.Provider value={[storeAddress, setStoreAddress]}>
       <Context.StorePhoneContext.Provider value={[storePhone, setStorePhone]}>
       <Context.StoreHoursContext.Provider value={[storeHours, setStoreHours]}>
@@ -21,6 +21,6 @@ export const ProvideContextForHeaders = (props) => {
       </Context.StoreHoursContext.Provider>
       </Context.StorePhoneContext.Provider>
       </Context.StoreAddressContext.Provider>
-      </Context.StoreNumberContext.Provider>
+      </Context.StoreIdContext.Provider>
     )
 }

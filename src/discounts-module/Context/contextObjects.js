@@ -1,7 +1,7 @@
 import React from 'react'
 
 // INITIALIZATION OF CONTEXT OBJECTS - FOR HEADERS
-export const StoreNumberContext = React.createContext('');
+export const StoreIdContext = React.createContext('');
 export const StoreAddressContext = React.createContext('');
 export const StorePhoneContext = React.createContext('');
 export const StoreHoursContext = React.createContext('');
