@@ -22,7 +22,7 @@ export const DiscountsModuleRoute = () => {
         <div className="store-hours">
             <StoreHours />
         </div>
-        <div className="discounts-title">
+        <div className="discounts-header">
             <DiscountsTitle />
         </div>
         <div className="exchange-policy">
