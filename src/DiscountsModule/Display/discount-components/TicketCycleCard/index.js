@@ -5,6 +5,7 @@ import * as Ticket from './ColorComponents'
 
 export const TicketCycleCard = (props) => {
     const {color} = useDaysPassed();
+    
     const setColorComponent = () => {
         switch(color){
             case 'Yellow': return <Ticket.Yellow />
@@ -16,16 +17,17 @@ export const TicketCycleCard = (props) => {
             default: return "Loading..."
         }
     }
-  return (
-      <Card>
-        <div className="ticket-cycle-title">
-            Clothing / Handbags
-        </div>
+    return (
+        <Card>
+            <div className="ticket-cycle-title">
+                Clothing / Handbags
+            </div>
             
-        {
+            {
+            
             setColorComponent()
-        }
-        
-      </Card>
-  );
+            
+            }
+        </Card>
+    );
 };
