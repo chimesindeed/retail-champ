@@ -1,5 +1,5 @@
 import React, {useContext}  from 'react'
-import {StoreAddressContext} from '../../../Context/ProvideContextForHeaders'
+import {StoreAddressContext} from '../../../Context/contextObjects'
 
 export const StoreAddress = (props)=>{
     const [storeAddress] = useContext(StoreAddressContext)

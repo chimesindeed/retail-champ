@@ -15,7 +15,7 @@
     "discountboxes discountboxes discountboxes discountboxes delivery delivery"
     "footer footer footer footer footer footer";
 }
-.store-num {
+.store-id {
     grid-area: storenumber;
     background-color: cornsilk; 
     color: rgb(5, 5, 73);

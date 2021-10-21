@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import {StoreHoursContext} from '../../../Context/ProvideContextForHeaders'
+import {StoreHoursContext} from '../../../Context/contextObjects'
 
 export const StoreHours = (props)=>{
   const [storeHours] = useContext(StoreHoursContext)
