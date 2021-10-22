@@ -12,5 +12,5 @@ export const ItemizedDiscountsCard = (props) => {
                 <Media />
             </div>
         </div>
-  );
+    );
 };
