@@ -1,5 +1,5 @@
 .window-body {
-  background-color: cornsilk;
+    background-color: cornsilk;
 }
 .wrapper {
     height: 100vh; width: 100vw;
@@ -75,25 +75,25 @@
     flex-direction: row;
 }
 .ticket-cycle-card {
-  display: flex;
-  flex: .45;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #2d3841;
-  border-width: 1px;
-  border-style: solid;
-  border-color: blue;
+    display: flex;
+    flex: .45;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3841;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
 }
 .ticket-cycle-title {
-  display: flex;
-  justify-content: center;
-  color: rgb(133, 235, 93);
-  letter-spacing: 1px;
-  margin-top: 9px;
-  margin-bottom: 30px;
-  font-size: 21px;
-  font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(133, 235, 93);
+    letter-spacing: 1px;
+    margin-top: 9px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: bold;
 }
 .yellow {
     font-size: 15px;
@@ -147,21 +147,21 @@
 }
 
 .itemized-discounts-card {
-  display: flex;
-  flex: .55;
-  flex-direction: column;
-  background-color: #2d3841;
-  border: 1px solid blue;
+    display: flex;
+    flex: .55;
+    flex-direction: column;
+    background-color: #2d3841;
+    border: 1px solid blue;
 }
 .itemized-discounts-card-title {
-  display: flex;
-  justify-content: center;
-  color: rgb(133, 235, 93);
-  letter-spacing: 1px;
-  font-size: 21px;
-  margin-top: 35px;
-  margin-bottom: 5px;
-  font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(133, 235, 93);
+    letter-spacing: 1px;
+    font-size: 21px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 .books-and-media-container{
     display: flex;
@@ -172,29 +172,29 @@
     padding-top: 3px;
 }
 .books-container {
-  flex-direction: column;
+    flex-direction: column;
 }
 .books-title {
-  color: rgb(255, 248, 152);
-  text-decoration-line: underline;
-  align-self: center;
-  letter-spacing: 1px;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 2px;
-  font-weight: bold;
+    color: rgb(255, 248, 152);
+    text-decoration-line: underline;
+    align-self: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-weight: bold;
 }
 .books-item-and-price {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .softcover {
-  min-width: 90px;
-  color: navy;
-  font-size: 20px;
-  margin-bottom: 13px;
+    min-width: 90px;
+    color: navy;
+    font-size: 20px;
+    margin-bottom: 13px;
 }
 .softcover-input{
     width: 100px;
@@ -202,10 +202,10 @@
     margin-bottom: 37px;
 }
 .hardcover {
-  min-width: 90px;
-  color: navy;
-  font-size: 20px;
-  margin-bottom: 10px;
+    min-width: 90px;
+    color: navy;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .hardcover-input{
     width: 100px;
@@ -213,13 +213,89 @@
     margin-bottom: 37px;
 }
 .childrens {
-  min-width: 90px;
-  color: lightblue;
-  font-size: 20px;
-  margin-bottom: 7px;
+    min-width: 90px;
+    color: lightblue;
+    font-size: 20px;
+    margin-bottom: 7px;
 }
 .childrens-input{
     width: 100px;
     font-size: 14px;
     margin-bottom: 37px;
+}
+.media-container {
+    flex-direction: column;
+}
+.media-title {
+    color: rgb(255, 248, 152);
+    text-decoration-line: underline;
+    align-self: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.tapes {
+    min-width: 90px;
+    color: rgb(201, 104, 24);
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.tapes-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.albums {
+    min-width: 90px;
+    color: rgb(201, 104, 24);
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+.albums-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.cds {
+    min-width: 90px;
+    color: rgb(201, 104, 24);
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+.cds-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.dvds {
+    min-width: 90px;
+    color: rgb(16, 145, 85);
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+.dvds-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.sets {
+    min-width: 90px;
+    color: rgb(16, 145, 85);
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+.sets-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.prices {
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-left: 15px;
+    margin-right: 3px;
+    font-size: 20px,
 }
