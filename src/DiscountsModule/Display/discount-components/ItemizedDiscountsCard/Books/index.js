@@ -1,4 +1,7 @@
 import React from 'react';
+import Softcover from './Softcover'
+import Hardcover from './Hardcover'
+import Childrens from './Childrens'
 
 const books = "Books"
 
@@ -8,10 +11,11 @@ export const Books = (props) => {
             <div className="books-title">
                 {books}
             </div>
+
+            <Softcover />
+            <Hardcover />
+            <Childrens />
             
-            <h3>Softcover</h3>
-            <h3>Hardcover</h3>
-            <h3>Childrens</h3>
         </div>
   );
 };
