@@ -153,7 +153,7 @@
   background-color: #2d3841;
   border: 1px solid blue;
 }
-.itemized-discounts-title {
+.itemized-discounts-card-title {
   display: flex;
   justify-content: center;
   color: rgb(133, 235, 93);
@@ -162,4 +162,64 @@
   margin-top: 35px;
   margin-bottom: 5px;
   font-weight: bold;
+}
+.books-and-media-container{
+    display: flex;
+    flex-shrink: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #2d3841;
+    padding-top: 3px;
+}
+.books-container {
+  flex-direction: column;
+}
+.books-title {
+  color: rgb(255, 248, 152);
+  text-decoration-line: underline;
+  align-self: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.books-item-and-price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.softcover {
+  min-width: 90px;
+  color: navy;
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+.softcover-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 37px;
+}
+.hardcover {
+  min-width: 90px;
+  color: navy;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.hardcover-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 37px;
+}
+.childrens {
+  min-width: 90px;
+  color: lightblue;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.childrens-input{
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 37px;
 }
