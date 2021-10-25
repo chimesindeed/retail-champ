@@ -1,13 +1,22 @@
-//
 import React, {useContext} from 'react';
-import { Form, FormGroup,} from 'reactstrap';
+import {Form, FormGroup} from 'reactstrap';
+import {getFirestore} from 'firebase/firestore';
+import {doc, updateDoc} from 'firebase/firestore';
+import app from '../../../../../../../Firestore/Config'
 import {SetsPriceContext} from '../../../../../../Context/contextObjects'
 
+const db = getFirestore(app);
 
 export const Input = () => {
     const [setsPrice] = useContext(SetsPriceContext)
     
-    const handleDoubleClick = async(e) =>{}    
+    const setsRef = doc(db, "items", "sets");
+    
+    const handleDoubleClick = async(e) =>{
+       await updateDoc(setsRef, {
+            price: e.target.value
+});
+        }
     
     return (
         <Form>
@@ -16,7 +25,7 @@ export const Input = () => {
                        type="number"
                        name="priceInput"
                        id="priceInput"
-                       placeholder={setsPrice}
+                       placeholder={setsPrice.price}
                        onDoubleClick={handleDoubleClick}/>
             </FormGroup>
         </Form>
