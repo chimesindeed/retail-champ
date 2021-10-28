@@ -1,7 +1,7 @@
 import {useEffect, useContext} from 'react'
 import { getFirestore } from 'firebase/firestore';
 import {doc, onSnapshot} from 'firebase/firestore'
-import app from '../../Firestore/Config'
+import app from '../../Firebase/firebaseConfig'
 import * as Prices from '../Context/contextObjects'
 
 const db = getFirestore(app);
