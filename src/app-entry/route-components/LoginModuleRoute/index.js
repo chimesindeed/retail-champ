@@ -11,7 +11,6 @@ export const LoginModuleRoute = (props) => {
     
     onAuthStateChanged(auth, (currentUser)=>{
         setUser(currentUser)
-        if(currentUser){window.location="/discounts"}
     })
     
     const login = async () => {
