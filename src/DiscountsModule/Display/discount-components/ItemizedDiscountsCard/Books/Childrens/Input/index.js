@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {Form, FormGroup} from 'reactstrap';
 import {getFirestore} from 'firebase/firestore';
 import {doc, updateDoc} from 'firebase/firestore';
-import app from '../../../../../../../Firestore/Config'
+import app from '../../../../../../../Firebase/firebaseConfig'
 import {ChildrensPriceContext} from '../../../../../../Context/contextObjects'
 
 const db = getFirestore(app);

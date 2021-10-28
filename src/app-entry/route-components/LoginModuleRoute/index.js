@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
-import {auth} from '../../../Firestore/Config'
+import {Button, Form, Label, Input} from 'reactstrap';
 import {signInWithEmailAndPassword, onAuthStateChanged, signOut} from 'firebase/auth'
+import {auth} from '../../../Firebase/firebaseConfig'
 
 export const LoginModuleRoute = (props) => {
     
@@ -9,7 +9,10 @@ export const LoginModuleRoute = (props) => {
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
     
-    onAuthStateChanged(auth, (currentUser)=>{setUser(currentUser)})
+    onAuthStateChanged(auth, (currentUser)=>{
+        setUser(currentUser)
+        if(currentUser){window.location="/discounts"}
+    })
     
     const login = async () => {
         try {const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);}
@@ -19,28 +22,25 @@ export const LoginModuleRoute = (props) => {
     const logout = async () => {await signOut(auth);}
   
     return (
-        <Form>
-            <FormGroup>
-                <Label for="email">Email</Label>
-                <Input 
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="email"
-                    onChange={(e)=>{setLoginEmail(e.target.value)}}
-                />
-            </FormGroup>
-    
-            <FormGroup>
-                <Label for="password">Password</Label>
-                <Input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="password"
-                    onChange={(e)=>{setLoginPassword(e.target.value)}}
-                />
-            </FormGroup>
+        <Form className="login-form">
+            <Label for="email">Email</Label>
+            <Input 
+                className="login-input"
+                type="email"
+                id="email"
+                placeholder="email"
+                onChange={(e)=>{setLoginEmail(e.target.value)}}
+            />
+            
+            <Label for="password">Password</Label>
+            <Input
+                className="login-input"
+                type="password"
+                id="password"
+                placeholder="password"
+                onChange={(e)=>{setLoginPassword(e.target.value)}}
+            />
+
             <h4>Current User: {user?.email}</h4>
             <Button onClick={login}>Submit</Button>
             <Button onClick={logout}>Logout</Button>
