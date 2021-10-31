@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {DiscountsModule} from '../DiscountsModule'
-import {LoginModuleRoute} from './route-components/LoginModuleRoute'
+import {LoginModule} from '../LoginModule'
 
 export const App = () => {
     return (
@@ -9,7 +9,7 @@ export const App = () => {
         <div>
           <Switch>
             <Route path='/discounts' exact component={DiscountsModule}/>
-            <Route path='/login' exact component = {LoginModuleRoute}/>
+            <Route path='/login' exact component = {LoginModule}/>
           </Switch>
         </div>
       </Router>

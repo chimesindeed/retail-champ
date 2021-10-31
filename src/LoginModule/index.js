@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {Button, Form, Label, Input} from 'reactstrap';
 import {signInWithEmailAndPassword, onAuthStateChanged, signOut} from 'firebase/auth'
-import {auth} from '../../../Firebase/firebaseConfig'
+import {auth} from '../Firebase/firebaseConfig'
 
-export const LoginModuleRoute = (props) => {
+export const LoginModule = (props) => {
     
     const [user, setUser] = useState({});
     const [loginEmail, setLoginEmail] = useState('');
