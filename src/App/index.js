@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import {DiscountsModule} from '../DiscountsModule'
-import {LoginModule} from '../LoginModule'
+import {DiscountsModule} from '../Components/DiscountsModule'
+import {LoginModule} from '../Components/LoginModule'
 
 export const App = () => {
     return (
