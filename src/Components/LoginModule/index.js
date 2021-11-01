@@ -1,24 +1,31 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {Button, Form, Input} from 'reactstrap';
 import {signInWithEmailAndPassword, onAuthStateChanged, signOut} from 'firebase/auth'
 import {auth} from '../../Firebase/firebaseConfig'
+import {LoginBarToggle} from '../DiscountsModule/Context/contextObjects'
 
 export const LoginModule = (props) => {
     
     const [user, setUser] = useState({});
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
+    const [, setLoginNavToggle] = useContext(LoginBarToggle)
     
     onAuthStateChanged(auth, (currentUser)=>{
         setUser(currentUser)
     })
     
+    const closeLoginBar = (timeOut) => {
+        setTimeout(()=>{setLoginNavToggle(false)}, timeOut)
+    }
+    
     const login = async () => {
         try {const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);}
         catch (error){console.log(error)}
+        closeLoginBar(1000)
     }
     
-    const logout = async () => {await signOut(auth);}
+    const logout = async () => {await signOut(auth); closeLoginBar(1000)}
   
     return (
         <Form className="login-form">

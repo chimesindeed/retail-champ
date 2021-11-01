@@ -15,6 +15,12 @@
     "discountboxes discountboxes discountboxes discountboxes delivery delivery"
     "footer footer footer footer footer footer";
 }
+.login-toggle {
+    grid-area: "logintoggle";
+    background-color: cornsilk;
+    width: 0px;
+    height: 0px;
+}
 .store-id {
     grid-area: storenumber;
     background-color: cornsilk; 
