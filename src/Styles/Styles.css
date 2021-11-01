@@ -236,7 +236,6 @@
     margin-bottom: 2px;
     font-weight: bold;
 }
-
 .media-item-and-price {
   display: flex;
   flex-direction: row;
@@ -306,15 +305,57 @@
     font-size: 20px,
 }
 .login-form {
-    margin-left: 60px;
-    margin-top: 60px;
-    width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-top: 10px;
     background-color: rgb(26, 67, 87);
     color: white;
     border: solid green 1px;
-
 }
-.login-input {
-    width: 300px;
+.email-input {
+    background-color: darkslategrey;
+    border: 1px solid red;
+    width: 150px;
+    height: 23px;
+    font-size: 11px;
+    margin-top: 7px;
+    margin-right: 40px;
+}
+.password-input {
+    background-color: darkslategrey;
+    border: 1px solid red;
+    width: 130px;
+    height: 23px;
+    font-size: 11px;
+    margin-top: 7px;
+    margin-right: 40px;
+}
+.email-label {
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.password-label {
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.login-button {
+    letter-spacing: 1px;
+    font-size: 13px;
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+}
+.logout-button {
+    letter-spacing: 1px;
+    font-size: 13px;
+    height: 30px;
+    width: 70px;
+    margin: 10px;
 }
