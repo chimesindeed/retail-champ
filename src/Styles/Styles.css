@@ -5,9 +5,9 @@
     height: 100vh; width: 100vw;
     background-color: cornsilk;
     display: grid;
-    grid-template: .4fr .1fr .1fr .1fr 1.2fr 1.2fr .7fr / 1fr 1fr 1fr 1fr .3fr 1.3fr;
+    grid-template: .4fr .1fr .1fr .1fr 1.2fr 1.2fr .7fr / .1fr 1.9fr 1fr 1fr .3fr 1.3fr;
     grid-template-areas:
-    "storenumber storenumber storenumber storehours storehours storehours"
+    "logintoggle storenumber storenumber storehours storehours storehours"
     "storeaddress storeaddress . . . ."
     "storephone storephone . . . ."
     "discountsheader discountsheader discountsheader discountsheader . ."
