@@ -1,9 +1,9 @@
 import React from 'react';
-import Albums from './Albums'
-import Cds from './Cds'
-import Dvds from './Dvds'
-import Sets from './Sets'
-import Vhs from './Vhs'
+import {Albums} from './Albums'
+import {Cds} from './Cds'
+import {Dvds} from './Dvds'
+import {Sets} from './Sets'
+import {Vhs} from './Vhs'
 
 const musicVideo = "Music / Video"
 

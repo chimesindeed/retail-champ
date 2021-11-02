@@ -1,32 +1,25 @@
- import React from 'react'
+ import React, {useState, useContext} from 'react'
  import ReactCardFlip from 'react-card-flip'
  import {Price} from './Price'
  import {Input} from './Input'
+ import {CurrentUser} from '../../../../../Context/contextObjects'
  
- export default class Hardcover extends React.Component{
-    constructor(){
-        super()
-        this.state= {
-            isFlipped: false
-        }
-    }
+ export const Hardcover = () => {
+    const [isFlipped, setIsFlipped] = useState(false)
 
-    handleClick = (e) => {
-        e.preventDefault();
-        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+    const handleClick = (e) => {
+        setIsFlipped(prevState => (!prevState));
     }
     
-    render(){
-        return (
-            <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-                <div key = 'front' onDoubleClick={this.handleClick}>
+    return (
+            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+                <div key = 'front' onDoubleClick={handleClick}>
                     <Price/>
                 </div>
 
-                <div key="back" onDoubleClick={this.handleClick}>
+                <div key="back" onDoubleClick={handleClick}>
                     <Input/>
                 </div>
             </ReactCardFlip>
         )
     }
-}

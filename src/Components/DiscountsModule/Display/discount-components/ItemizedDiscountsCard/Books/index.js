@@ -1,7 +1,7 @@
 import React from 'react';
-import Softcover from './Softcover'
-import Hardcover from './Hardcover'
-import Childrens from './Childrens'
+import {Softcover} from './Softcover'
+import {Hardcover} from './Hardcover'
+import {Childrens} from './Childrens'
 
 const books = "Books"
 
