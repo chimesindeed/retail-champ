@@ -2,11 +2,11 @@ import React, {useState, useContext} from 'react';
 import {Button, Form, Input} from 'reactstrap';
 import {signInWithEmailAndPassword, onAuthStateChanged, signOut} from 'firebase/auth'
 import {auth} from '../../Firebase/firebaseConfig'
-import {LoginBarToggle} from '../DiscountsModule/Context/contextObjects'
+import {LoginBarToggle, CurrentUser} from '../DiscountsModule/Context/contextObjects'
 
 export const LoginModule = (props) => {
     
-    const [user, setUser] = useState({});
+    const [user, setUser] = useContext(CurrentUser);
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
     const [, setLoginNavToggle] = useContext(LoginBarToggle)
