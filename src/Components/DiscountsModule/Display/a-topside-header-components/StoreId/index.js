@@ -4,8 +4,8 @@ import {StoreIdContext} from '../../../Context/contextObjects'
 export const StoreId = (props)=>{
     const [storeId] = useContext(StoreIdContext)
     return (
-        <div>
-            Retail Hub #{storeId}
+        <div className="store-id">
+            Store: {storeId}
         </div>
     );
 }

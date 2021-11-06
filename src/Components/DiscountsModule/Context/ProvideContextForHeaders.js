@@ -6,11 +6,11 @@ import * as Context from './contextObjects'
 export const ProvideContextForHeaders = (props) => {
   const [currentUser, setCurrentUser] = useState({})
   const [loginBarToggle, setLoginBarToggle] = useState(false)
-  const [storeId, setStoreId] = useState('Id');
-  const [storeAddress, setStoreAddress] = useState('Address');
-  const [storePhone, setStorePhone] = useState('Phone');
-  const [storeHours, setStoreHours] = useState('Hours');
-  const [storeExchangePolicy, setStoreExchangePolicy] = useState('Exchange Policy')
+  const [storeId, setStoreId] = useState('');
+  const [storeAddress, setStoreAddress] = useState('xxxxx');
+  const [storePhone, setStorePhone] = useState('(xxx) xxx-xxxx');
+  const [storeHours, setStoreHours] = useState('');
+  const [storeExchangePolicy, setStoreExchangePolicy] = useState('')
 
     return (
       <Context.CurrentUser.Provider value={[currentUser, setCurrentUser]}>

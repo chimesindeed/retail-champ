@@ -5,7 +5,7 @@ import {Media} from './Media'
 const media = "MEDIA"
 export const ItemizedDiscountsCard = (props) => {
     return (
-        <div>
+        <div className="itemized-discounts-card">
             <div className="itemized-discounts-card-title">{media}</div>
             <div className="books-and-media-container">
                 <Books />

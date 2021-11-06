@@ -4,7 +4,7 @@ import {StoreAddressContext} from '../../../Context/contextObjects'
 export const StoreAddress = (props)=>{
     const [storeAddress] = useContext(StoreAddressContext)
   return (
-    <div>
+    <div className="store-add">
         a: {storeAddress}
     </div>
   );

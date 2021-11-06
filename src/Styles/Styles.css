@@ -1,91 +1,115 @@
 .window-body {
-    background-color: cornsilk;
+    
 }
-.wrapper {
+.wrapper {background-color: cornsilk;
     height: 100vh; width: 100vw;
-    background-color: cornsilk;
+     background-color: rgb(182, 103, 84);
     display: grid;
-    grid-template: .4fr .1fr .1fr .1fr 1.2fr 1.2fr .7fr / .1fr 1.9fr 1fr 1fr .3fr 1.3fr;
+    grid-template: 1fr .2fr .2fr .6fr 2.5fr .9fr 1fr / .1fr 1.3fr 1fr 1.5fr .6fr .5fr;
     grid-template-areas:
-    "logintoggle storenumber storenumber storehours storehours storehours"
-    "storeaddress storeaddress . . . ."
+    "logintoggle storenumber storehours storehours . exchangepolicy"
+    "storeaddress storeaddress . . . exchangepolicy"
     "storephone storephone . . . ."
     "discountsheader discountsheader discountsheader discountsheader . ."
-    "discountboxes discountboxes discountboxes discountboxes exchangepolicy exchangepolicy"
-    "discountboxes discountboxes discountboxes discountboxes delivery delivery"
+    ". discountboxes discountboxes discountboxes discountboxes ."
+    ". discountboxes discountboxes discountboxes discountboxes delivery"
     "footer footer footer footer footer footer";
 }
 .login-toggle {
     grid-area: "logintoggle";
-    background-color: cornsilk;
+    background-color: rrgb(182, 103, 84);
     width: 0px;
     height: 0px;
 }
 .store-id {
     grid-area: storenumber;
-    background-color: cornsilk; 
-    color: rgb(5, 5, 73);
-    font-weight: 700;
-    font-size: 2.3em;
-    margin-left: 7px;
+    background-color: rgb(182, 103, 84);
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: -20px;
 }
 .store-add {
     grid-area: storeaddress;
-    background-color: cornsilk; 
-    color: rgb(5, 5, 73);
-    font-size: 1em;
-    margin-left: 7px;
+    background-color: rgb(182, 103, 84);
+    color: black;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: -55px;
 }
 .store-phone{
     grid-area: storephone;
-    background-color: cornsilk;
-    color: rgb(138, 38, 38);
-    font-size: 1em;
-    margin-left: 7px;
+    background-color: rgb(182, 103, 84);
+    color: black;
+    font-size: 14px;
+    margin-top: -53px;
+    margin-left: 12px;
 }
 .store-hours{
     grid-area: storehours;
     display: flex;
     flex-direction: column;
     align-items: 'center';
-    background-color: cornsilk;
-    color: rgb(122, 218, 165);
-    font-size: 1.2em;
+    background-color: rgb(182, 103, 84);
+    color: black;
+    font-size: 24px;
+}
+.exchange-policy-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 130px;
+    grid-area: exchangepolicy;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-right: 15px;
+    border: 1px dotted black;
+}
+.exchange-policy-header{
+    color: red;
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: 3px;
+    text-decoration-line: underline;
+    margin-top: 5px;
 }
 .exchange-policy{
-    grid-area: exchangepolicy;
-    background-color: cornsilk;
     color: red;
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 27px;
+    margin-left: -15px;
 }
 .discounts-header{
     grid-area: discountsheader;
-    background-color: cornsilk;
+    background-color: rgb(182, 103, 84);
     color: black;
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 3px;   
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 300px;
+    margin-top: 12px;
+    margin-left: 340px;
 }
 .discount-boxes-wrapper{
     grid-area: discountboxes;
     display: flex;
-    margin-left: 13px;
+    margin-top: 20px;
+    margin-left: 30px;
     grid-gap: 3px;
-    display: flex;
     flex-direction: row;
 }
 .ticket-cycle-card {
     display: flex;
-    flex: .45;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 450px;
+<<<<<<< HEAD
+   
+=======
+>>>>>>> Css, formatting, display adjustments
     background-color: #2d3841;
     border-width: 1px;
     border-style: solid;
@@ -96,65 +120,68 @@
     justify-content: center;
     color: rgb(133, 235, 93);
     letter-spacing: 1px;
-    margin-top: 9px;
-    margin-bottom: 30px;
+    margin-top: 23px;
+    margin-bottom: 25px;
     font-size: 21px;
     font-weight: bold;
 }
 .yellow {
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.1px;
     padding: 3px 17px 7px 18px;
     margin-bottom: 33px;
-    border: 1px solid yellow;
+    border: 3px double yellow;
     color: #ffffff;
     font-weight: bold;
     font-style: italic;
 }
 .green {
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.1px;
     padding: 3px 17px 7px 18px;
     margin-bottom: 33px;
-    border: 1px solid green;
+    border: 3px double green;
     color: white;
     font-weight: bold;
     font-style: italic;
 }
 .blue {
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.1px;
     padding: 3px 17px 7px 18px;
     margin-bottom: 33px;
-    border: 1px solid blue;
+    border: 3px double blue;
     color: white;
     font-weight: bold;
     font-style: italic;
 }
 .white {
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.1px;
     padding: 3px 17px 7px 18px;
     margin-bottom: 33px;
-    border: 1px solid white;
+    border: 3px double white;
     color: white;
     font-weight: bold;
     font-style: italic;
 }
 .pink {
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.1px;
     padding: 3px 17px 7px 18px;
     margin-bottom: 33px;
-    border: 1px solid pink;
+    border: 3px double pink;
     color: white;
     font-weight: bold;
     font-style: italic;
 }
-
 .itemized-discounts-card {
     display: flex;
-    flex: .55;
+    width: 470px;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> Css, formatting, display adjustments
     flex-direction: column;
     background-color: #2d3841;
     border: 1px solid blue;
@@ -165,8 +192,8 @@
     color: rgb(133, 235, 93);
     letter-spacing: 1px;
     font-size: 21px;
-    margin-top: 35px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 7px;
     font-weight: bold;
 }
 .books-and-media-container{
@@ -174,7 +201,8 @@
     flex-shrink: 2;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #2d3841;
+    background-color: rgb(94, 46, 46);
+    border: 1px solid black;
     padding-top: 3px;
 }
 .books-container {
@@ -187,7 +215,7 @@
     letter-spacing: 1px;
     font-size: 20px;
     margin-top: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
     font-weight: bold;
 }
 .books-item-and-price {
@@ -198,8 +226,9 @@
 }
 .softcover {
     min-width: 90px;
-    color: navy;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 13px;
 }
 .softcover-input{
@@ -209,8 +238,9 @@
 }
 .hardcover {
     min-width: 90px;
-    color: navy;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 .hardcover-input{
@@ -220,8 +250,9 @@
 }
 .childrens {
     min-width: 90px;
-    color: lightblue;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 7px;
 }
 .childrens-input{
@@ -239,18 +270,19 @@
     letter-spacing: 1px;
     font-size: 20px;
     margin-top: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
     font-weight: bold;
 }
 .media-item-and-price {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .vhs {
     min-width: 90px;
-    color: rgb(201, 104, 24);
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 3px;
 }
 .vhs-input{
@@ -260,8 +292,9 @@
 }
 .albums {
     min-width: 90px;
-    color: rgb(201, 104, 24);
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 1px;
 }
 .albums-input{
@@ -271,8 +304,9 @@
 }
 .cds {
     min-width: 90px;
-    color: rgb(201, 104, 24);
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 1px;
 }
 .cds-input{
@@ -282,8 +316,9 @@
 }
 .dvds {
     min-width: 90px;
-    color: rgb(16, 145, 85);
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 1px;
 }
 .dvds-input{
@@ -293,8 +328,9 @@
 }
 .sets {
     min-width: 90px;
-    color: rgb(16, 145, 85);
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 1px;
 }
 .sets-input{
@@ -304,11 +340,10 @@
 }
 .prices {
     color: white;
-    letter-spacing: 1px;
-    padding-top: 5px;
     padding-left: 15px;
     margin-right: 3px;
-    font-size: 20px,
+    font-size: 20px;
+    font-style: italic;
 }
 .login-form {
     display: flex;
