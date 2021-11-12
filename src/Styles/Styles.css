@@ -106,10 +106,7 @@
     justify-content: center;
     align-items: center;
     width: 450px;
-<<<<<<< HEAD
    
-=======
->>>>>>> Css, formatting, display adjustments
     background-color: #2d3841;
     border-width: 1px;
     border-style: solid;
@@ -178,10 +175,7 @@
 .itemized-discounts-card {
     display: flex;
     width: 470px;
-<<<<<<< HEAD
     
-=======
->>>>>>> Css, formatting, display adjustments
     flex-direction: column;
     background-color: #2d3841;
     border: 1px solid blue;
