@@ -2,7 +2,7 @@ import React from 'react';
 import {Books} from './Books'
 import {Media} from './Media'
 
-const media = "MEDIA"
+const media = "Media"
 export const ItemizedDiscountsCard = (props) => {
     return (
         <div className="itemized-discounts-card">

@@ -9,6 +9,7 @@ export const StoreAddressContext = React.createContext('');
 export const StorePhoneContext = React.createContext('');
 export const StoreHoursContext = React.createContext('');
 export const StoreExchangePolicyContext = React.createContext('');
+export const InstagramContext = React.createContext('');
 
 // INITIALIZATION OF CONTEXT OBJECTS - FOR PRICES
 export const ChildrensPriceContext = React.createContext('');

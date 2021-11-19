@@ -10,7 +10,8 @@ export const ProvideContextForHeaders = (props) => {
   const [storeAddress, setStoreAddress] = useState('xxxxx');
   const [storePhone, setStorePhone] = useState('(xxx) xxx-xxxx');
   const [storeHours, setStoreHours] = useState('');
-  const [storeExchangePolicy, setStoreExchangePolicy] = useState('')
+  const [storeExchangePolicy, setStoreExchangePolicy] = useState('');
+  const [instagramSite, setInstagramSite] = useState('instagram url');
 
     return (
       <Context.CurrentUser.Provider value={[currentUser, setCurrentUser]}>
@@ -20,7 +21,9 @@ export const ProvideContextForHeaders = (props) => {
       <Context.StorePhoneContext.Provider value={[storePhone, setStorePhone]}>
       <Context.StoreHoursContext.Provider value={[storeHours, setStoreHours]}>
       <Context.StoreExchangePolicyContext.Provider value={[storeExchangePolicy, setStoreExchangePolicy]}>
+      <Context.InstagramContext.Provider value={[instagramSite, setInstagramSite]}>
         {props.children}
+      </Context.InstagramContext.Provider>
       </Context.StoreExchangePolicyContext.Provider>
       </Context.StoreHoursContext.Provider>
       </Context.StorePhoneContext.Provider>

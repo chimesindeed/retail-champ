@@ -11,6 +11,7 @@ import {DiscountsHeader} from './Display/a-topside-header-components/DiscountsHe
 import {StoreExchangePolicy} from './Display/b-rightside-header-components/StoreExchangePolicy'
 import {TicketCycleCard} from './Display/discount-components/TicketCycleCard'
 import {ItemizedDiscountsCard} from './Display/discount-components/ItemizedDiscountsCard'
+import {Instagram} from './Display/b-rightside-header-components/Instagram'
 
 export const DiscountsModule = () => {
     const [loginNavToggle, setLoginNavToggle] = useContext(LoginBarToggle)
@@ -38,6 +39,7 @@ export const DiscountsModule = () => {
                     <TicketCycleCard />
                     <ItemizedDiscountsCard />                
                 </div>
+                <Instagram/>
             </div>
         </div>
     )
