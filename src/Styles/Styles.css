@@ -116,6 +116,8 @@
     align-items: center;
     width: 460px;
     height: 300px;
+    width: 450px;
+   
     background-color: #2d3841;
     border-width: 1px;
     border-style: solid;
@@ -184,7 +186,11 @@
 .itemized-discounts-card {
     display: flex;
     width: 470px;
+<<<<<<< HEAD
     height: 300px;
+=======
+    
+>>>>>>> 70bcdcf5752018b9f2232a02973def977973a494
     flex-direction: column;
     background-color: #2d3841;
     border: 1px solid orange;
