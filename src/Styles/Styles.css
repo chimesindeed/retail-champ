@@ -186,11 +186,8 @@
 .itemized-discounts-card {
     display: flex;
     width: 470px;
-<<<<<<< HEAD
     height: 300px;
-=======
     
->>>>>>> 70bcdcf5752018b9f2232a02973def977973a494
     flex-direction: column;
     background-color: #2d3841;
     border: 1px solid orange;
